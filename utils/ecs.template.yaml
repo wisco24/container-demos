@@ -12,16 +12,16 @@ Parameters:
     Description: Select at least two subnets in your selected VPC.
   DesiredCapacity:
     Type: Number
-    Default: '1'
+    Default: '2'
     Description: Number of instances to launch in your ECS cluster.
   MaxSize:
     Type: Number
-    Default: '1'
+    Default: '2'
     Description: Maximum number of instances that can be launched in your ECS cluster.
   InstanceType:
     Description: EC2 instance type
     Type: String
-    Default: 't3.medium'
+    Default: 'c3.large'
     AllowedValues:
       - t3.medium
       - t3.large
@@ -36,7 +36,7 @@ Parameters:
 Mappings:
   AWSRegionToAMI:
     us-east-1:
-      AMIID: ami-09bee01cc997a78a6
+      AMIID: ami-0be7a2ce9d7f29f92
     us-east-2:
       AMIID: ami-0a9e12068cb98a01d
     us-west-1:
